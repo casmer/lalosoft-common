@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Common", "Lalosoft.Common\Lalosoft.Common.csproj", "{6CEDD2FA-C97C-4625-BAA0-DF677DD62ABB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Common.Versioning", "Lalosoft.Common.Versioning\Lalosoft.Common.Versioning.csproj", "{0F2E5F2C-7B28-4144-9D9E-167FC814C286}"
@@ -13,9 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Common.Lib", "Lalo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Common.Exceptions", "Lalosoft.Common.Exceptions\Lalosoft.Common.Exceptions.csproj", "{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Controls.DateTimePicker", "..\..\Lalosoft.Controls\Source\Lalosoft.DateTimePicker\Lalosoft.Controls.DateTimePicker.csproj", "{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.Controls.ConnectionStringDialog", "..\..\Lalosoft.Controls\Source\Lalosoft.Controls.ConnectionStringDialog\Lalosoft.Controls.ConnectionStringDialog.csproj", "{8D81FE9B-389B-4D01-B5FC-1AC550998940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidConstantGenerator", "GuidConstantGenerator\GuidConstantGenerator.csproj", "{39341C55-401D-405F-91AB-074FAB24254F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,28 +93,15 @@ Global
 		{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}.ReleaseInstallers|Any CPU.ActiveCfg = ReleaseInstallers|Any CPU
 		{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}.ReleaseInstallers|x86.ActiveCfg = ReleaseInstallers|x86
 		{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}.ReleaseInstallers|x86.Build.0 = ReleaseInstallers|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Debug|x86.ActiveCfg = Debug|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Debug|x86.Build.0 = Debug|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Release|x86.ActiveCfg = Release|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.Release|x86.Build.0 = Release|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.ReleaseInstallers|Any CPU.ActiveCfg = Release|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.ReleaseInstallers|x86.ActiveCfg = Release|x86
-		{4ED94786-2A1B-4A94-B25B-D0B2BEAA900E}.ReleaseInstallers|x86.Build.0 = Release|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Debug|x86.ActiveCfg = Debug|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Debug|x86.Build.0 = Debug|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Release|x86.ActiveCfg = Release|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.Release|x86.Build.0 = Release|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.ReleaseInstallers|Any CPU.ActiveCfg = Release|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.ReleaseInstallers|x86.ActiveCfg = Release|x86
-		{8D81FE9B-389B-4D01-B5FC-1AC550998940}.ReleaseInstallers|x86.Build.0 = Release|x86
+		{39341C55-401D-405F-91AB-074FAB24254F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.Release|x86.ActiveCfg = Release|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.ReleaseInstallers|Any CPU.ActiveCfg = Release|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.ReleaseInstallers|Any CPU.Build.0 = Release|Any CPU
+		{39341C55-401D-405F-91AB-074FAB24254F}.ReleaseInstallers|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

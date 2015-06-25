@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask TaskName="Lalosoft.VersionIncrementor.VersionBuildTask" AssemblyFile="../../../../Bin/Lalosoft.VersionIncrementor.dll" />
+
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -114,8 +114,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="BeforeBuild">
-    <VersionBuildTask AssemblyFileLocation="$(MSBuildProjectDirectory)\Properties\AssemblyInfo.cs" ConfigurationName="$(ConfigurationName)" VersionBaseFile="$(MSBuildProjectDirectory)\..\VersionBase.xml">
-    </VersionBuildTask>
-  </Target>
+  
 </Project>

@@ -1,4 +1,6 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="Lalosoft.VersionIncrementor.VersionBuildTask" AssemblyFile="../../../../Bin/Lalosoft.VersionIncrementor.dll" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -11,18 +13,19 @@
     <AssemblyName>Lalosoft.Common.DisplayList</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>lalosoftcodesign_signature.pfx</AssemblyOriginatorKeyFile>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -45,6 +48,22 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseInstallers|AnyCPU' ">
+    <OutputPath>bin\ReleaseInstallers\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseInstallers|x86' ">
+    <OutputPath>bin\x86\ReleaseInstallers\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -75,6 +94,10 @@
       <Project>{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}</Project>
       <Name>Lalosoft.Common.Exceptions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lalosoft.Common.Lib\Lalosoft.Common.Lib.csproj">
+      <Project>{EF4651F6-0390-4ADD-B12F-9CC504D0B6B9}</Project>
+      <Name>Lalosoft.Common.Lib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lalosoft.Common\Lalosoft.Common.csproj">
       <Project>{6CEDD2FA-C97C-4625-BAA0-DF677DD62ABB}</Project>
       <Name>Lalosoft.Common</Name>
@@ -88,10 +111,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
+       Other similar extension points exist, see Microsoft.Common.targets.-->
   <Target Name="BeforeBuild">
+    <VersionBuildTask AssemblyFileLocation="$(MSBuildProjectDirectory)\Properties\AssemblyInfo.cs" ConfigurationName="$(ConfigurationName)" VersionBaseFile="$(MSBuildProjectDirectory)\..\VersionBase.xml">
+    </VersionBuildTask>
   </Target>
-  <Target Name="AfterBuild">
+  <!--<Target Name="AfterBuild">
   </Target>
   -->
 </Project>
