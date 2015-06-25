@@ -1,0 +1,2 @@
+            _Instance._CmsCatostrophicOoPThresholdAmount =
+                Utils.IsXmlNullDecimal(xDoc.DocumentElement.SelectSingleNode(XmlConsts.xpCmsCatostrophicOoPThresholdAmount), _Instance._CmsCatostrophicOoPThresholdAmount);

@@ -1,0 +1,8 @@
+    <tr>
+        <td class="SubHead" width="200">
+            <dnn:Label id="lbl${value1}" runat="server" controlname="txt${value1}" suffix=":"></dnn:Label>
+        </td>
+        <td valign="bottom" >
+            <asp:textbox id="txt${value1}" cssclass="NormalTextBox" width="250" columns="30" rows="10" maxlength="2000" runat="server" />
+        </td>
+    </tr>

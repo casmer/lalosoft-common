@@ -1,0 +1,16 @@
+public string ${value1}
+        {
+            get
+            {
+                return _Settings.ContainsKey("${value1}") ? (string)_Settings["${value1}"] 
+                    : GetRecastGlobalSettingValue("${value1}");
+            }
+        }
+
+        public bool ${value1}IsLocal
+        {
+            get
+            {
+                return _Settings.ContainsKey("${value1}");
+            }
+        }

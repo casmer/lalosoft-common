@@ -1,0 +1,1 @@
+_rule.${value1} = Convert.ToDecimal(txt${value1}.Text);

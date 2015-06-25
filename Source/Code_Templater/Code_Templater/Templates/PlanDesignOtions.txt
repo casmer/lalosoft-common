@@ -1,0 +1,4 @@
+        <tr>
+            <td><asp:LinkButton ID="btn${value2}" runat=server OnClick="btn${value2}_Click" Text="${value1}" CssClass="SubHead" ToolTip="&nbsp;" /></td>
+            <td>View ${value1} List, edit ${value1} records, create new ${value1}, find plans by ${value1}.</td>
+        </tr>

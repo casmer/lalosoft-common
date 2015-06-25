@@ -1,0 +1,5 @@
+public ${value1} ${value2}
+{
+  get { return _${value2};}
+  set { _${value2} = value;}
+}

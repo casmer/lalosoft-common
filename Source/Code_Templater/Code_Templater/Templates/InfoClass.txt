@@ -1,0 +1,19 @@
+#region Private Vars
+${privatedeclare.txt}
+#endregion Private Vars
+
+#region Properties
+${property.txt}
+#endregion Properties
+
+#region Constructors
+public CLASSNAME(${constuctorparams.txt})
+{
+  ${constructorsets.txt}
+}
+
+public CLASSNAME()
+{
+ 
+}
+#endregion Constructors

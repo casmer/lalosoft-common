@@ -1,0 +1,1 @@
+public System.Web.UI.WebControls.LinkButton btn${value2};

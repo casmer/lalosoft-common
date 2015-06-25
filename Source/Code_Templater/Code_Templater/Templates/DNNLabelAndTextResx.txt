@@ -1,0 +1,2 @@
+lbl${value1}.Text|${value2}
+lbl${value1}.Help|${value3}

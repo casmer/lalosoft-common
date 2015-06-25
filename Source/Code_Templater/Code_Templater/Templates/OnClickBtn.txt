@@ -1,0 +1,5 @@
+void btn${value2}_Click(object sender, EventArgs e)
+        {
+            this.Response.Redirect(EditUrl("${value2}"), true);
+        }
+

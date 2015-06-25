@@ -1,0 +1,31 @@
+INSERT INTO DotNetNukeDev2.dbo.Tricast_RecastParameterInfo
+           
+(
+  ConfigId
+           ,ParameterName
+           ,PromptText
+           ,ShortDisplayText
+           ,LongDisplayText
+           ,ShowInTitle
+           ,DefaultValue
+           ,PromptType
+           ,DisplayControlName
+           ,Description
+           ,DataProcedureName
+)
+
+     VALUES
+           
+(
+  1
+           ,'${value1}'
+           ,'${value2}'
+           ,'${value3}'
+           ,'${value3}'
+           ,0
+           ,'${value4}'
+           ,'Text'
+           ,'TextEntry'
+           ,'${value3}'
+           ,'${value5}'
+)

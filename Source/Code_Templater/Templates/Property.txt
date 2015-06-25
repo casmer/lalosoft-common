@@ -1,0 +1,6 @@
+[XmlElement("${value4}")]
+public ${value2} ${value3}
+{
+  get { return _${value1};}
+  set { _${value1} = value;}
+}

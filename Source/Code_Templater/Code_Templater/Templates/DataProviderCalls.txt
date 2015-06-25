@@ -1,0 +1,1 @@
+${value1} : _currentCreds.CheckObjectAccess(ObjectNames.s${value1});  _dataProvider.${value1}();

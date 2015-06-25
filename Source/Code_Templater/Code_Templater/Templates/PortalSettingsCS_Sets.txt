@@ -1,0 +1,1 @@
+objModules.UpdateTabModuleSetting(TabModuleId, "EMAIL${value1}", txt${value1}.Text);

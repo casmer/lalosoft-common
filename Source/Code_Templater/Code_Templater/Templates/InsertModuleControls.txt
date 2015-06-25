@@ -1,0 +1,21 @@
+INSERT INTO [DotNetNukeTricastDev1].[dbo].[dnn_ModuleControls]
+           ([ModuleDefID]
+           ,[ControlKey]
+           ,[ControlTitle]
+           ,[ControlSrc]
+           ,[IconFile]
+           ,[ControlType]
+           ,[ViewOrder]
+           ,[HelpUrl]
+           ,[SupportsPartialRendering])
+     VALUES
+           (126
+           ,'${value2}'
+           ,'${value3}'
+           ,'${value4}'
+           ,null
+           ,${value6}
+           ,0
+           ,null
+           ,0)
+

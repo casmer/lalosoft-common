@@ -1,0 +1,1 @@
+basePmPm += GetFactorPlusMinus(Settings.Instance.BasePlan.${value1}, ${value1}.Checked, factorInfo.${value1});

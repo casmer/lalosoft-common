@@ -1,0 +1,8 @@
+INSERT INTO plan_design_structure
+    ([plan_design_id] ,[structure_id] ,[precedence])
+select
+	plan_design_id, ${value1}, 0
+from plan_design pd
+	join structure s on
+		s.structure_id = ${value1}
+	where ${value1} is not null 

@@ -1,0 +1,1 @@
+result.${value1} = int.Parse(((TextBox)curItem.Cells[i++].FindControl("itm${value1}")).Text);

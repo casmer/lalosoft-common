@@ -1,0 +1,4 @@
+                                         <asp:TemplateColumn >
+                                            <HeaderTemplate>${value2}</HeaderTemplate>
+                                            <ItemTemplate><asp:TextBox runat="server" Text='<%# DataBinder.Eval(Container, "DataItem.${value1}") %>' /></ItemTemplate>
+                                        </asp:TemplateColumn>

@@ -1,0 +1,1 @@
+${value2} = (${value1})Utils.IsDbNullObject(results["${value2}"],0);

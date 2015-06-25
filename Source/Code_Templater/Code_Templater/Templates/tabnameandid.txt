@@ -1,0 +1,1 @@
+insert #temp (tabname, tabmoduleid) values ('${value1}',${value2})

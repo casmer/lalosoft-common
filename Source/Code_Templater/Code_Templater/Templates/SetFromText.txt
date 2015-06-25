@@ -1,0 +1,1 @@
+SetFromText("${value1}", txt${value1}, args.ReportArgs);

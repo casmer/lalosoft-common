@@ -1,0 +1,1 @@
+public const string s${value1} = "${value1}";

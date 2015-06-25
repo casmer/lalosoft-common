@@ -1,0 +1,3 @@
+
+
+"${value3}=" + DrugLookupController.IsNull( _${value1}, "<NULL>") + Environment.NewLine + 

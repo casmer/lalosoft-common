@@ -1,0 +1,14 @@
+public class ${value1} : BindingList<${value2}>
+    {
+        public ${value1}()
+            : base()
+        {
+
+        }
+
+        public ${value1}(IList<${value2}> list)
+            : base(list)
+        {
+
+        }
+    }
