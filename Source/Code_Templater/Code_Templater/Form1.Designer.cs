@@ -30,14 +30,14 @@ namespace Code_Templater
         {
           this.components = new System.ComponentModel.Container();
           this.btnProcess = new System.Windows.Forms.Button();
-          this.tabControl1 = new Crownwood.DotNetMagic.Controls.TabControl();
-          this.tabPage1 = new Crownwood.DotNetMagic.Controls.TabPage();
+          this.tabControl1 = new System.Windows.Forms.TabControl();
+          this.tabPage1 = new System.Windows.Forms.TabPage();
           this.button1 = new System.Windows.Forms.Button();
           this.btnReload = new System.Windows.Forms.Button();
           this.btnSave = new System.Windows.Forms.Button();
           this.cboFiles = new System.Windows.Forms.ComboBox();
           this.txtTemplate = new System.Windows.Forms.TextBox();
-          this.tabPage2 = new Crownwood.DotNetMagic.Controls.TabPage();
+          this.tabPage2 = new System.Windows.Forms.TabPage();
           this.dgValues = new System.Windows.Forms.DataGridView();
           this.value1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
           this.value2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +56,7 @@ namespace Code_Templater
           this.copyInDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
           this.selectedToLowerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
           this.selectedToUPPERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-          this.tabPage3 = new Crownwood.DotNetMagic.Controls.TabPage();
+          this.tabPage3 = new System.Windows.Forms.TabPage();
           this.txtResults = new System.Windows.Forms.TextBox();
           this.selectedUnderScoreFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
           this.tabControl1.SuspendLayout();
@@ -84,17 +84,13 @@ namespace Code_Templater
                       | System.Windows.Forms.AnchorStyles.Right)));
           this.tabControl1.Location = new System.Drawing.Point(12, 41);
           this.tabControl1.Name = "tabControl1";
-          this.tabControl1.OfficeDockSides = false;
           this.tabControl1.SelectedIndex = 1;
-          this.tabControl1.ShowDropSelect = false;
           this.tabControl1.Size = new System.Drawing.Size(684, 213);
           this.tabControl1.TabIndex = 1;
-          this.tabControl1.TabPages.AddRange(new Crownwood.DotNetMagic.Controls.TabPage[] {
+          this.tabControl1.TabPages.AddRange(new System.Windows.Forms.TabPage[] {
             this.tabPage1,
             this.tabPage2,
             this.tabPage3});
-          this.tabControl1.TextTips = true;
-          this.tabControl1.SelectionChanged += new Crownwood.DotNetMagic.Controls.SelectTabHandler(this.tabControl1_SelectionChanged);
           // 
           // tabPage1
           // 
@@ -103,19 +99,10 @@ namespace Code_Templater
           this.tabPage1.Controls.Add(this.btnSave);
           this.tabPage1.Controls.Add(this.cboFiles);
           this.tabPage1.Controls.Add(this.txtTemplate);
-          this.tabPage1.InactiveBackColor = System.Drawing.Color.Empty;
-          this.tabPage1.InactiveTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage1.InactiveTextColor = System.Drawing.Color.Empty;
           this.tabPage1.Location = new System.Drawing.Point(1, 1);
           this.tabPage1.Name = "tabPage1";
-          this.tabPage1.SelectBackColor = System.Drawing.Color.Empty;
-          this.tabPage1.Selected = false;
-          this.tabPage1.SelectTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage1.SelectTextColor = System.Drawing.Color.Empty;
           this.tabPage1.Size = new System.Drawing.Size(682, 188);
           this.tabPage1.TabIndex = 4;
-          this.tabPage1.Title = "Template";
-          this.tabPage1.ToolTip = "Page";
           // 
           // button1
           // 
@@ -172,18 +159,10 @@ namespace Code_Templater
           // tabPage2
           // 
           this.tabPage2.Controls.Add(this.dgValues);
-          this.tabPage2.InactiveBackColor = System.Drawing.Color.Empty;
-          this.tabPage2.InactiveTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage2.InactiveTextColor = System.Drawing.Color.Empty;
           this.tabPage2.Location = new System.Drawing.Point(1, 1);
           this.tabPage2.Name = "tabPage2";
-          this.tabPage2.SelectBackColor = System.Drawing.Color.Empty;
-          this.tabPage2.SelectTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage2.SelectTextColor = System.Drawing.Color.Empty;
           this.tabPage2.Size = new System.Drawing.Size(682, 188);
           this.tabPage2.TabIndex = 5;
-          this.tabPage2.Title = "Values";
-          this.tabPage2.ToolTip = "Page";
           // 
           // dgValues
           // 
@@ -314,19 +293,10 @@ namespace Code_Templater
           // tabPage3
           // 
           this.tabPage3.Controls.Add(this.txtResults);
-          this.tabPage3.InactiveBackColor = System.Drawing.Color.Empty;
-          this.tabPage3.InactiveTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage3.InactiveTextColor = System.Drawing.Color.Empty;
           this.tabPage3.Location = new System.Drawing.Point(1, 1);
           this.tabPage3.Name = "tabPage3";
-          this.tabPage3.SelectBackColor = System.Drawing.Color.Empty;
-          this.tabPage3.Selected = false;
-          this.tabPage3.SelectTextBackColor = System.Drawing.Color.Empty;
-          this.tabPage3.SelectTextColor = System.Drawing.Color.Empty;
           this.tabPage3.Size = new System.Drawing.Size(682, 188);
           this.tabPage3.TabIndex = 6;
-          this.tabPage3.Title = "Results";
-          this.tabPage3.ToolTip = "Page";
           // 
           // txtResults
           // 
@@ -370,11 +340,11 @@ namespace Code_Templater
         #endregion
 
         private System.Windows.Forms.Button btnProcess;
-        private Crownwood.DotNetMagic.Controls.TabControl tabControl1;
-        private Crownwood.DotNetMagic.Controls.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox txtTemplate;
-        private Crownwood.DotNetMagic.Controls.TabPage tabPage2;
-        private Crownwood.DotNetMagic.Controls.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dgValues;
         private System.Windows.Forms.TextBox txtResults;
         private System.Windows.Forms.ContextMenuStrip cntPasteStuff;

@@ -117,10 +117,7 @@ namespace Code_Templater
       return results;
     }
 
-    private void tabControl1_SelectionChanged(Crownwood.DotNetMagic.Controls.TabControl sender, Crownwood.DotNetMagic.Controls.TabPage oldPage, Crownwood.DotNetMagic.Controls.TabPage newPage)
-    {
-
-    }
+   
 
     private void copyInDataToolStripMenuItem_Click(object sender, EventArgs e)
     {
