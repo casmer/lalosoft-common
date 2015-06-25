@@ -1,0 +1,464 @@
+﻿"DeployProject"
+{
+"VSVersion" = "3:800"
+"ProjectType" = "8:{06A35CCD-C46D-44D5-987B-CF40FF872267}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:Lalosoft.Common.MergeModule"
+"LanguageId" = "3:1033"
+"CodePage" = "3:1252"
+"UILanguageId" = "3:1033"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_0AA89ED7583B4D3C8666D2E338C1A674"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1DFCDF92ABF4ED7D9EFAD08CB5887889"
+        "OwnerKey" = "8:_5D1CCA79D9E1425CAA6CD620FE77033C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1DFCDF92ABF4ED7D9EFAD08CB5887889"
+        "OwnerKey" = "8:_FF23F2ECDACC41B6BF98CFB976754D16"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_20D330DECB21486FAA7105A9D1FEB4B8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_25193299360B4F65957DC4F596666AD1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_29F64911569744FCA6FAF968163F080E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5D1CCA79D9E1425CAA6CD620FE77033C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF23F2ECDACC41B6BF98CFB976754D16"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0AA89ED7583B4D3C8666D2E338C1A674"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF23F2ECDACC41B6BF98CFB976754D16"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_25193299360B4F65957DC4F596666AD1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5D1CCA79D9E1425CAA6CD620FE77033C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1DFCDF92ABF4ED7D9EFAD08CB5887889"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_20D330DECB21486FAA7105A9D1FEB4B8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_29F64911569744FCA6FAF968163F080E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debug\\Lalosoft.Common.MergeModule.msm"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:1"
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:Release\\Lalosoft.Common.MergeModule.msm"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:1"
+        }
+        "ReleaseInstallers"
+        {
+        "DisplayName" = "8:ReleaseInstallers"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:ReleaseInstallers\\Lalosoft.Common.MergeModule.msm"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:1"
+        }
+    }
+    "Deployable"
+    {
+        "CustomAction"
+        {
+        }
+        "DefaultFeature"
+        {
+        "Name" = "8:DefaultFeature"
+        "Title" = "8:"
+        "Description" = "8:"
+        }
+        "File"
+        {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1DFCDF92ABF4ED7D9EFAD08CB5887889"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Lalosoft.Common, Version=1.6.3747.3, Culture=neutral, PublicKeyToken=c37bc71c33170032, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_1DFCDF92ABF4ED7D9EFAD08CB5887889"
+                    {
+                    "Name" = "8:Lalosoft.Common.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Lalosoft.Common.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+        }
+        "FileType"
+        {
+        }
+        "Folder"
+        {
+            "{C7E34266-2C30-44B9-A9A3-4E394ABD6E18}:_321943B15C0747B08F0ED540FD21BFCC"
+            {
+            "Name" = "8:#1927"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:GAC"
+                "Folders"
+                {
+                }
+            }
+            "{F4FE1E22-A4D2-4EE8-9259-29A1CE8BB2FF}:_5B732C62B4C541EEBE5A645924BA1FC0"
+            {
+            "DefaultLocation" = "8:[TARGETDIR]"
+            "DisplayName" = "8:Module Retargetable Folder"
+            "Description" = "8:"
+            "Name" = "8:Module Retargetable Folder"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:TRUE"
+            "Property" = "8:NEWRETARGETABLEPROPERTY1"
+                "Folders"
+                {
+                }
+            }
+        }
+        "Sequences"
+        {
+        }
+        "MergeModule"
+        {
+        }
+        "Module"
+        {
+        "ModuleSignature" = "8:MergeModule.1361A7C9571544EA92D69EAD0E579043"
+        "Version" = "8:1.6.3747.3"
+        "Title" = "8:Lalosoft.Common.MergeModule"
+        "Subject" = "8:"
+        "Author" = "8:Leave a Light on Software, Inc."
+        "Keywords" = "8:"
+        "Comments" = "8:Lalosoft.Common Libraries Merge Module"
+        "SearchPath" = "8:"
+        "UseSystemSearchPath" = "11:TRUE"
+        "TargetPlatform" = "3:0"
+        "PreBuildEvent" = "8:"
+        "PostBuildEvent" = "8:"
+        "RunPostBuildEvent" = "3:0"
+        }
+        "ProjectOutput"
+        {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0AA89ED7583B4D3C8666D2E338C1A674"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common\\obj\\x86\\Release\\Lalosoft.Common.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{6CEDD2FA-C97C-4625-BAA0-DF677DD62ABB}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_20D330DECB21486FAA7105A9D1FEB4B8"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common.Exceptions\\obj\\x86\\Release\\Lalosoft.Common.Exceptions.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_25193299360B4F65957DC4F596666AD1"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common.Lib\\obj\\x86\\Release\\Lalosoft.Common.Lib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{EF4651F6-0390-4ADD-B12F-9CC504D0B6B9}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_29F64911569744FCA6FAF968163F080E"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common.Attributes\\obj\\x86\\Release\\Lalosoft.Common.Attributes.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{912A2B97-D452-4D53-ADDF-2BADFA074D1B}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5D1CCA79D9E1425CAA6CD620FE77033C"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common.DisplayList\\obj\\x86\\Release\\Lalosoft.Common.DisplayList.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{D0180998-BFF8-48B0-A982-7710AE189B33}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FF23F2ECDACC41B6BF98CFB976754D16"
+            {
+            "SourcePath" = "8:..\\Lalosoft.Common.Versioning\\obj\\x86\\Release\\Lalosoft.Common.Versioning.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_321943B15C0747B08F0ED540FD21BFCC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x86"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{0F2E5F2C-7B28-4144-9D9E-167FC814C286}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Shortcut"
+        {
+        }
+    }
+}

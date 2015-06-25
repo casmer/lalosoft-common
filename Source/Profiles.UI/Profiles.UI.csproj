@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="Lalosoft.VersionIncrementor.VersionBuildTask" AssemblyFile="../../../../Bin/Lalosoft.VersionIncrementor.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2B4A39C-11F9-42A0-A82A-7E6B2C0B83C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lalosoft.Profiles.UI</RootNamespace>
+    <AssemblyName>Lalosoft.Profiles.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Services\Deployment\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>lalosoftcodesign_signature.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lalosoft.Common, Version=1.10.4792.1, Culture=neutral, PublicKeyToken=c37bc71c33170032, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\Deployment\bin\Lalosoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Lalosoft.Common.Attributes, Version=1.10.4792.1, Culture=neutral, PublicKeyToken=c37bc71c33170032, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\Deployment\bin\Lalosoft.Common.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Lalosoft.Common.Exceptions, Version=1.10.4792.1, Culture=neutral, PublicKeyToken=c37bc71c33170032, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\Deployment\bin\Lalosoft.Common.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Lalosoft.Common.Lib, Version=1.10.4792.1, Culture=neutral, PublicKeyToken=c37bc71c33170032, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\Deployment\bin\Lalosoft.Common.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmSelectProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectProfile.Designer.cs">
+      <DependentUpon>FrmSelectProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Profiles.Common\Profiles.Common.csproj">
+      <Project>{58DF1134-1827-4AEB-97D4-92D9764F404B}</Project>
+      <Name>Profiles.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lalosoftcodesign_signature.pfx" />
+    <None Include="Properties\DataSources\Lalosoft.Profiles.Common.DataObjects.ProfileList.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmSelectProfile.resx">
+      <DependentUpon>FrmSelectProfile.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeBuild">
+    <VersionBuildTask AssemblyFileLocation="$(MSBuildProjectDirectory)\Properties\AssemblyInfo.cs" ConfigurationName="$(ConfigurationName)" VersionBaseFile="$(MSBuildProjectDirectory)\..\VersionBase.xml">
+    </VersionBuildTask>
+  </Target>
+</Project>

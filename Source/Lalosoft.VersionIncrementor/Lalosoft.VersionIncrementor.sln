@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lalosoft.VersionIncrementor", "Lalosoft.VersionIncrementor.csproj", "{501A668A-1581-46BF-9ABC-FE0D0166221E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "..\TestApp\TestApp.csproj", "{5C3E6105-4F7E-465F-8BDE-F1B05D4D95AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501A668A-1581-46BF-9ABC-FE0D0166221E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501A668A-1581-46BF-9ABC-FE0D0166221E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501A668A-1581-46BF-9ABC-FE0D0166221E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501A668A-1581-46BF-9ABC-FE0D0166221E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3E6105-4F7E-465F-8BDE-F1B05D4D95AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3E6105-4F7E-465F-8BDE-F1B05D4D95AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3E6105-4F7E-465F-8BDE-F1B05D4D95AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3E6105-4F7E-465F-8BDE-F1B05D4D95AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="Lalosoft.VersionIncrementor.VersionBuildTask" AssemblyFile="../../../../Bin/Lalosoft.VersionIncrementor.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF4651F6-0390-4ADD-B12F-9CC504D0B6B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lalosoft.Common.Lib</RootNamespace>
+    <AssemblyName>Lalosoft.Common.Lib</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>lalosoftcodesign_signature.pfx</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\Clients\Lalosoft\LalosRepo\Bin\Lalosoft.Common.Lib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Lalosoft.Common.Lib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseInstallers|AnyCPU' ">
+    <OutputPath>bin\ReleaseInstallers\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Lalosoft.Common.Lib.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseInstallers|x86' ">
+    <OutputPath>bin\x86\ReleaseInstallers\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmailUtils.cs" />
+    <Compile Include="FormsUtilities.cs" />
+    <Compile Include="LalosIncrementValues.cs" />
+    <Compile Include="LalosTimeIncrement.cs" />
+    <Compile Include="OutlookDataObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyFieldPair.cs" />
+    <Compile Include="ReflectionUtilities.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lalosoft.Common.Attributes\Lalosoft.Common.Attributes.csproj">
+      <Project>{912A2B97-D452-4D53-ADDF-2BADFA074D1B}</Project>
+      <Name>Lalosoft.Common.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lalosoft.Common.Exceptions\Lalosoft.Common.Exceptions.csproj">
+      <Project>{D645A7AA-A382-4425-B7C4-DB2ECA07E7EA}</Project>
+      <Name>Lalosoft.Common.Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lalosoftcodesign_signature.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Target Name="BeforeBuild">
+    <VersionBuildTask AssemblyFileLocation="$(MSBuildProjectDirectory)\Properties\AssemblyInfo.cs" ConfigurationName="$(ConfigurationName)" VersionBaseFile="$(MSBuildProjectDirectory)\..\VersionBase.xml">
+    </VersionBuildTask>
+  </Target>
+  <!--<Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
